@@ -37,6 +37,8 @@ public class Main {
             }
             System.out.println("Digite sair para encerrar ou qualquer tecla para executar novamente");
             opcao=input.nextLine();
+
+            System.out.println("Obrigado por utilizar o programa!!!");
         }
     }
 }
