@@ -5,7 +5,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         double media;
         int faltas ;
-        boolean comportamento;
+        boolean comp;
         String opcao="Amor";
 
         while (!opcao.equalsIgnoreCase("sair")) {
@@ -15,22 +15,22 @@ public class Main {
                 System.out.println("Insira as faltas do aluno: [0-100]");
                 faltas = Integer.parseInt(input.nextLine());
                 System.out.println("Este aluno apresentou bom comportamento? [Y] para sim [Qualquer tecla] para não" );
-                comportamento = input.nextLine().equalsIgnoreCase("Y");
+                comp = input.nextLine().equalsIgnoreCase("Y");
 
             } catch (Exception e) {
                 System.out.println("Você digitou opções invalidas");
                 continue;
             }
-            if (media>=5.0 && faltas<25 && comportamento){
+            if (media>=5.0 && faltas<25 && comp){
                 System.out.println("Este aluno foi aprovado");
             }
-            else if (media<5.0 && faltas<25 && comportamento) {
+            else if (media<5.0 && faltas<25 && comp) {
                 System.out.println("Este aluno fara recuperação");
             }
-            else if (media>= 5.0 && faltas>=25 && comportamento){
+            else if (media>= 5.0 && faltas>=25 && comp){
                 System.out.println("Este aluno ficará sem férias");
             }
-            else if (media>=5.0&& faltas<25 && !comportamento) {
+            else if (media>=5.0&& faltas<25 && !comp) {
                 System.out.println("Chamaremos este aluno para conversar");
             } else {
                 System.out.println("Este aluno foi reprovado");
