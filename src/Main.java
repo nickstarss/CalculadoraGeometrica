@@ -21,7 +21,7 @@ public class Main {
                 System.out.println("Você digitou opções invalidas");
                 continue;
             }
-            if (media>=5.0 && faltas<25 && comp){
+            if (media>=8.0 && faltas<25 && comp){
                 System.out.println("Este aluno foi aprovado");
             }
             else if (media<5.0 && faltas<25 && comp) {
