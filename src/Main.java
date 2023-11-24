@@ -8,6 +8,7 @@ public class Main {
         boolean comp;
         String opcao="Amor";
 
+
         while (!opcao.equalsIgnoreCase("sair")) {
             try {
                 System.out.println("Insira a média do aluno: [0-10]");
@@ -39,6 +40,9 @@ public class Main {
             opcao=input.nextLine();
 
             System.out.println("Obrigado por utilizar o programa!!!");
+
+            System.out.println("Voce e legal");
+            String legal = input.next();
         }
     }
 }
