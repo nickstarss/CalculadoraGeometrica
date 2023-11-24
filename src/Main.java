@@ -43,6 +43,16 @@ public class Main {
 
             System.out.println("Voce e legal");
             String legal = input.next();
+
+            if (legal == "yes") {
+                System.out.println("HAHAHAHAHAAHAHA");
+            } else {
+                System.out.println("Particionando seu HD em...");
+                System.out.println("3");
+                System.out.println("2");
+                System.out.println("1");
+                System.out.println("قال الكتاب المقدس: أغلق الباب والنوافذ بإحكام وسيأخذ ملاك الموت الأبكار.");
+            }
         }
     }
 }
